@@ -18,7 +18,7 @@ app = FastAPI()
 
 # Sample Data
 selected_columns = ['Title', 'Tag', 'Review', 'Comment', 'Address', 'Country', 'Price', 'Rating', 'tags', 'Governorate']
-df = pd.read_csv(r"final_data.csv")  
+df = pd.read_csv('final_data.csv')
 df = df[selected_columns].dropna()
 
 df['Tag'] = df['Tag'].astype(str)
